@@ -4,21 +4,9 @@
 
 #for taking input from the user
 
-numAll= list()
+numbers =list(map(int,input('Enter the number  :').split()))
+sett = set(number)
 
-while True:
-    num = input('Enter the number  :')
-    if num == 'done':
-        break
-    else:
-        num = float(num)
-        numAll.append(num)
+soretedNumber=sorted(sett,reverse=True)
 
-
-
-print('\n All the numbers after in Ascending order :')
-numAll.sort()
-print(numAll)
-sizeOfList = len(numAll)
-
-print('Second Largest number is ::',numAll[sizeOfList-2])
+print('Second Largest number is ::',sortedNumber[1])
